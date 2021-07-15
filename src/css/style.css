@@ -148,6 +148,9 @@ html, body {
   .product {
     width: 70%; }
 
+  .container .news form input {
+    width: 90%; }
+
   .container footer .center {
     flex-direction: column; }
     .container footer .center .left,
