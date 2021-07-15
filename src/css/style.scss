@@ -126,7 +126,7 @@ $cor-terciaria: #FFDB31;
 			display: flex;
 			flex-direction: column;
 
-			input{
+			input[type='text']{
 				width: 380px;
 				background: #fff;
 				color: #333;
@@ -134,8 +134,10 @@ $cor-terciaria: #FFDB31;
 				border:none;				
 				box-sizing: border-box;
 				padding:10px;
+
+				margin-top: 10px;
 			}
-			button{
+			input[type='submit']{
 				background:#000;
 				height: 50px;
 				width: 380px;
