@@ -148,7 +148,8 @@ html, body {
   .product {
     width: 70%; }
 
-  .container .news form input {
+  .container .news form input[type='text'],
+  .container .news form input[type='submit'] {
     width: 90%; }
 
   .container footer .center {

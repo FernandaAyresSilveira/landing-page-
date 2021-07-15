@@ -235,7 +235,8 @@ $cor-terciaria: #FFDB31;
 		width: 70%;
 	}
 	.container .news form{
-		input{
+		input[type='text'],
+		input[type='submit']{
 			width: 90%;
 		}
 	}
