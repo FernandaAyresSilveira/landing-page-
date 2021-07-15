@@ -154,33 +154,47 @@ $cor-terciaria: #FFDB31;
 		width: 100%;
 		padding:2em 0;
 		border-top: 2px dashed #ffc316;
+
 		.center{
 			display: flex;
 			flex-direction: row;
 
 		}
-
-		
-		
-		li{
-			padding:0.5em 0;
-			a{
-				text-decoration: none;
-				color: #fff;				
-				text-align: left;
-
-				img{
-					float: left;
-					width: 20px;
-					margin-right: 5px;
-				}
-			}
+		p{
+			color: #fff;
+			text-transform: uppercase;
 		}
+
+		
+		
+		
 
 		.left, .right{
 			display: flex;
 			flex-direction: column;
 			width: 50%;
+
+			ul{
+				display: flex;
+				flex-direction: column;
+
+				li{
+					padding:0.5em 0;
+
+					a{
+						text-decoration: none;
+						color: #fff;				
+						text-align: left;
+
+						img{
+							float: left;
+							width: 20px;
+							margin-right: 5px;
+						}
+					}
+				}
+
+			}
 		}
 		.left{
 			width: 50%;
@@ -189,4 +203,45 @@ $cor-terciaria: #FFDB31;
 
 		}
 	}
+}
+
+//midias queries
+@media (max-width: 768px)
+{
+	.container .banner{
+		background:#FFC31D;
+		.center{
+			width: 100%;
+			flex-direction: column;
+
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.container .list-products .carrossel{
+		flex-direction: column;
+
+		.product{
+			width: 50%;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+@media (max-width: 500px)
+{
+	.product{
+		width: 70%;
+	}
+
+	.container footer .center{
+		flex-direction: column;
+		.left,
+		.right {
+			width: 90%;
+			margin-bottom: 25px;
+		}
+
+	} 
 }

@@ -107,21 +107,52 @@ html, body {
     .container footer .center {
       display: flex;
       flex-direction: row; }
-    .container footer li {
-      padding: 0.5em 0; }
-      .container footer li a {
-        text-decoration: none;
-        color: #fff;
-        text-align: left; }
-        .container footer li a img {
-          float: left;
-          width: 20px;
-          margin-right: 5px; }
+    .container footer p {
+      color: #fff;
+      text-transform: uppercase; }
     .container footer .left, .container footer .right {
       display: flex;
       flex-direction: column;
       width: 50%; }
+      .container footer .left ul, .container footer .right ul {
+        display: flex;
+        flex-direction: column; }
+        .container footer .left ul li, .container footer .right ul li {
+          padding: 0.5em 0; }
+          .container footer .left ul li a, .container footer .right ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-align: left; }
+            .container footer .left ul li a img, .container footer .right ul li a img {
+              float: left;
+              width: 20px;
+              margin-right: 5px; }
     .container footer .left {
       width: 50%; }
+
+@media (max-width: 768px) {
+  .container .banner {
+    background: #FFC31D; }
+    .container .banner .center {
+      width: 100%;
+      flex-direction: column; }
+      .container .banner .center img {
+        width: 100%; }
+
+  .container .list-products .carrossel {
+    flex-direction: column; }
+    .container .list-products .carrossel .product {
+      width: 50%;
+      margin-bottom: 25px; } }
+@media (max-width: 500px) {
+  .product {
+    width: 70%; }
+
+  .container footer .center {
+    flex-direction: column; }
+    .container footer .center .left,
+    .container footer .center .right {
+      width: 90%;
+      margin-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
