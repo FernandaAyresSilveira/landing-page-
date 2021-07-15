@@ -1,0 +1,190 @@
+html,body{
+	margin: 0 auto;
+	display: block;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Open Sans', cursive;
+}
+
+
+
+.center{
+	width: 90%;
+	margin: 0 auto;
+}
+*{
+	margin: 0 auto;
+	padding:0;
+}
+$cor-primaria : #EB7900;
+$cor-secundaria : #F7A900;
+$cor-terciaria: #FFDB31;
+
+
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	.fullbanner{
+		width: 100%;
+		box-sizing: border-box;
+    	display: flex;
+
+
+		img{
+			width: 100%;
+		}
+	}
+	.banner{
+		width: 100%;
+		background: linear-gradient(to right, black 50%, #FFC31D 50%);
+
+		.center{
+			display: flex;
+	    	align-items: center;
+	    	flex-direction: row;
+	    	
+
+	    	img{
+	    		width: 50%;
+	    	}
+	    }
+
+	}
+	.list-products{
+		width: 100%;
+		background:#000;
+		background: url("../img/sprite-small.png") repeat;
+		padding: 6em 0;
+		display: flex;
+		flex-direction: row;
+
+		h1{
+			font-size: 1.8em;
+			padding: 2em 0;
+			text-align: center;
+
+		}
+		.carrossel{
+			display: flex;
+			flex-direction: row;
+			.product{
+				width: 30%;
+				padding: 2em 0;
+				text-align: center;
+				background: #fff;
+				display: flex;
+				flex-direction: column;
+				-webkit-box-shadow: 1px 1px 5px 1px #0000007a; 
+				box-shadow: 1px 1px 5px 1px #0000007a;
+				h21{
+					text-transform: uppercase;
+
+				}
+
+				img{
+					width: 100%;
+				}
+				span{
+					display: flex;
+					flex-direction: column;
+
+					s{
+						color: #ccc;
+					}
+					b{
+						font-size: 1.2em
+					}
+				}
+
+
+			}
+
+		}
+
+		
+
+		
+	}
+
+	.news{
+		background: url("../img/sprite-small.png") repeat;
+		padding-bottom: 5em;
+		width: 100%;
+		p{
+			color: #fff;
+			font-family: 'Amatic SCs', cursive;
+			font-size: 2em;
+			text-align:center;
+			padding: 2em 0;
+		}
+
+		form{
+			display: flex;
+			flex-direction: column;
+
+			input{
+				width: 380px;
+				background: #fff;
+				color: #333;
+				height: 50px;
+				border:none;				
+				box-sizing: border-box;
+				padding:10px;
+			}
+			button{
+				background:#000;
+				height: 50px;
+				width: 380px;
+				border:none;
+				color: #fff;
+				text-transform: uppercase;
+				margin-top: 10px;
+			}
+		}
+	}
+	footer{
+		background:#000;
+		height: auto;
+		width: 100%;
+		padding:2em 0;
+		border-top: 2px dashed #ffc316;
+		.center{
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		
+		
+		li{
+			padding:0.5em 0;
+			a{
+				text-decoration: none;
+				color: #fff;				
+				text-align: left;
+
+				img{
+					float: left;
+					width: 20px;
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.left, .right{
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+		}
+		.left{
+			width: 50%;
+		}
+		.right{
+
+		}
+	}
+}

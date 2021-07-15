@@ -1,0 +1,126 @@
+html, body {
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Open Sans', cursive; }
+
+.center {
+  width: 90%;
+  margin: 0 auto; }
+
+* {
+  margin: 0 auto;
+  padding: 0; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  .container .fullbanner {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; }
+    .container .fullbanner img {
+      width: 100%; }
+  .container .banner {
+    width: 100%;
+    background: linear-gradient(to right, black 50%, #FFC31D 50%); }
+    .container .banner .center {
+      display: flex;
+      align-items: center;
+      flex-direction: row; }
+      .container .banner .center img {
+        width: 50%; }
+  .container .list-products {
+    width: 100%;
+    background: #000;
+    background: url("../img/sprite-small.png") repeat;
+    padding: 6em 0;
+    display: flex;
+    flex-direction: row; }
+    .container .list-products h1 {
+      font-size: 1.8em;
+      padding: 2em 0;
+      text-align: center; }
+    .container .list-products .carrossel {
+      display: flex;
+      flex-direction: row; }
+      .container .list-products .carrossel .product {
+        width: 30%;
+        padding: 2em 0;
+        text-align: center;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-shadow: 1px 1px 5px 1px #0000007a;
+        box-shadow: 1px 1px 5px 1px #0000007a; }
+        .container .list-products .carrossel .product h21 {
+          text-transform: uppercase; }
+        .container .list-products .carrossel .product img {
+          width: 100%; }
+        .container .list-products .carrossel .product span {
+          display: flex;
+          flex-direction: column; }
+          .container .list-products .carrossel .product span s {
+            color: #ccc; }
+          .container .list-products .carrossel .product span b {
+            font-size: 1.2em; }
+  .container .news {
+    background: url("../img/sprite-small.png") repeat;
+    padding-bottom: 5em;
+    width: 100%; }
+    .container .news p {
+      color: #fff;
+      font-family: 'Amatic SCs', cursive;
+      font-size: 2em;
+      text-align: center;
+      padding: 2em 0; }
+    .container .news form {
+      display: flex;
+      flex-direction: column; }
+      .container .news form input {
+        width: 380px;
+        background: #fff;
+        color: #333;
+        height: 50px;
+        border: none;
+        box-sizing: border-box;
+        padding: 10px; }
+      .container .news form button {
+        background: #000;
+        height: 50px;
+        width: 380px;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 10px; }
+  .container footer {
+    background: #000;
+    height: auto;
+    width: 100%;
+    padding: 2em 0;
+    border-top: 2px dashed #ffc316; }
+    .container footer .center {
+      display: flex;
+      flex-direction: row; }
+    .container footer li {
+      padding: 0.5em 0; }
+      .container footer li a {
+        text-decoration: none;
+        color: #fff;
+        text-align: left; }
+        .container footer li a img {
+          float: left;
+          width: 20px;
+          margin-right: 5px; }
+    .container footer .left, .container footer .right {
+      display: flex;
+      flex-direction: column;
+      width: 50%; }
+    .container footer .left {
+      width: 50%; }
+
+/*# sourceMappingURL=style.css.map */
